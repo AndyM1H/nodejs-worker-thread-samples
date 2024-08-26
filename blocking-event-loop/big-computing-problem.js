@@ -1,4 +1,5 @@
 import { outputDelay } from "./utils/delay.js";
+import { Logger } from "./utils/logger.js";
 
 outputDelay(300);
 
@@ -10,4 +11,4 @@ function fibonacci(n) {
 }
 
 // it blocks the main thread
-Logger.info(fibonacci(40));
+Logger.info(`Fibonacci Result: ${fibonacci(40)}`);
